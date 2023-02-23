@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:viajes_app/screens/review.dart';
 
 class DescriptionPlaceSreen extends StatelessWidget {
   const DescriptionPlaceSreen({super.key});
@@ -16,7 +17,7 @@ class DescriptionPlaceSreen extends StatelessWidget {
 
     final star = Container(
       margin: const EdgeInsets.only(
-        top: 323.0,
+        top: 100.0,
         right: 3.0,
       ),
       child: const Icon(
@@ -29,7 +30,7 @@ class DescriptionPlaceSreen extends StatelessWidget {
       children: [
         Container(
           margin: const EdgeInsets.only(
-            top: 320.0,
+            top: 100.0,
             left: 20.0,
             right: 20.0,
           ),
@@ -39,6 +40,7 @@ class DescriptionPlaceSreen extends StatelessWidget {
             textAlign: TextAlign.left,
           ),
         ),
+        star,
         star,
         star,
         star,
@@ -66,6 +68,7 @@ class DescriptionPlaceSreen extends StatelessWidget {
       children: [
         titleAndStars,
         description,
+        const Review(),
       ],
     );
   }
