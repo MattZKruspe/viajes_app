@@ -3,12 +3,15 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:viajes_app/screens/review.dart';
 
 class DescriptionPlaceSreen extends StatelessWidget {
-
   final String namePlace;
   final String descriptionPlace;
   final int stars;
 
-  const DescriptionPlaceSreen({super.key, required this.namePlace, required this.descriptionPlace, required this.stars});
+  const DescriptionPlaceSreen(
+      {super.key,
+      required this.namePlace,
+      required this.descriptionPlace,
+      required this.stars});
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +19,6 @@ class DescriptionPlaceSreen extends StatelessWidget {
       fontSize: 30.0,
       fontWeight: FontWeight.bold,
     );
-
-  
 
     final star = Container(
       margin: const EdgeInsets.only(
@@ -72,7 +73,6 @@ class DescriptionPlaceSreen extends StatelessWidget {
       children: [
         titleAndStars,
         description,
-        const Review(),
       ],
     );
   }
