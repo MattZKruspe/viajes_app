@@ -11,9 +11,9 @@ class Reviews extends StatelessWidget {
       children: [
         Review(
             pathProfile: 'assets/img/profile.jpg',
-            user: 'Filomena Acosta',
+            user: 'Los Acosta',
             details: '1 review, 5 photos',
-            comments: "This is an amazing place Sri Lanka"),
+            comments: "Como Una Novela - Los Acosta"),
         Review(
             pathProfile: 'assets/img/beautiful.jpg',
             user: 'Alexa Martinez',
