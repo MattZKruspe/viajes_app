@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class SmallButton extends StatefulWidget {
   const SmallButton({super.key});
 
@@ -11,24 +12,22 @@ class _SmallButtonState extends State<SmallButton> {
   bool pressed = false;
   void onPressedFav() {
     setState(() {
-      if (!pressed){
+      if (!pressed) {
         pressed = true;
-      }
-      else{
+      } else {
         pressed = false;
       }
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-    onPressed: onPressedFav,
-    backgroundColor: const Color.fromARGB(255, 37, 148, 152),
-    mini: true,
-    tooltip: 'fav',
-    child: Icon(
-      pressed? Icons.favorite : Icons.favorite_border,
-      ),
+      onPressed: onPressedFav,
+      backgroundColor: Color.fromARGB(229, 17, 226, 174),
+      mini: true,
+      tooltip: 'Fav',
+      child: Icon(pressed ? Icons.favorite : Icons.favorite_border),
     );
   }
 }
